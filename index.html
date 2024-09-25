@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="BlackColor">calc</h1>
+      <div class="row">
+        <p class="themeParagraph BlackColor">THEME</p>
+        <div class="changetheme">
+          <div class="paragraph">
+            <p class="BlackColor">1</p>
+            <p class="BlackColor">2</p>
+            <p class="BlackColor">3</p>
+          </div>
+          <div class="buttonconteiner" id="buttonconteiner">
+            <button id="buttonRed"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <input class="inputNumber BlackColor" type="text" id="input" />
+
+    <div class="allNumber" id="numbers">
+      <button class="allbuttons" onclick="Numbersvalue('7')">7</button>
+      <button class="allbuttons" onclick="Numbersvalue('8')">8</button>
+      <button class="allbuttons" onclick="Numbersvalue('9')">9</button>
+      <button class="DEL" onclick="Delete()">DEL</button>
+      <button class="allbuttons" onclick="Numbersvalue('4')">4</button>
+      <button class="allbuttons" onclick="Numbersvalue('5')">5</button>
+      <button class="allbuttons" onclick="Numbersvalue('6')">6</button>
+      <button class="allbuttons" onclick="alloperator('+')">+</button>
+      <button class="allbuttons" onclick="Numbersvalue('1')">1</button>
+      <button class="allbuttons" onclick="Numbersvalue('2')">2</button>
+      <button class="allbuttons" onclick="Numbersvalue('3')">3</button>
+      <button class="allbuttons" onclick="alloperator('-')">-</button>
+      <button class="allbuttons" onclick="Numbersvalue('.')">.</button>
+      <button class="allbuttons" onclick="Numbersvalue('0')">0</button>
+      <button class="allbuttons" onclick="alloperator('/')">/</button>
+      <button class="allbuttons" onclick="alloperator('*')">x</button>
+      <button class="DEL Reset" onclick="clearAll()">RESET</button>
+      <button class="toloba allbuttons" id="toloba" onclick="Calculate()">
+        =
+      </button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
